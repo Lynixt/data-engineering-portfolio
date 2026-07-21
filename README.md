@@ -66,5 +66,5 @@ The factory is open.
 - 📊 Integration capstone combining all three projects into a single end-to-end pipeline
 
 ## Contact
-
+- LinkedIn: [Michael Alexander](https://www.linkedin.com/in/michael-alexander-651b39265/)
 - GitHub: [Lynixt](https://github.com/Lynixt)
