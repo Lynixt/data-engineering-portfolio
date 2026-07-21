@@ -31,7 +31,12 @@ Turns out, yes. Data engineering is just building factories for data — miners,
 
 I have a CS degree and previous QA experience, but I'd never touched data engineering until recently. Two years of career uncertainty. Then I asked the right question and everything clicked.
 
+Each project has a detailed README explaining the architecture, setup, and my thought process. I treat my portfolio like I would treat a production system.
+
 The factory is open.
+
+## What's Next
+- 📊 Integration capstone combining all three projects into a single end-to-end pipeline
 
 ## Contact
 
