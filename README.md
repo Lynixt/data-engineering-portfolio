@@ -14,7 +14,7 @@ Three production-grade projects spanning batch processing, data warehousing, and
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      DATA ENGINEERING                        │
+│                      DATA ENGINEERING                       │
 ├───────────────┬───────────────────┬─────────────────────────┤
 │               │                   │                         │
 │  Project 1    │    Project 2      │      Project 3          │
