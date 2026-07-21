@@ -33,7 +33,7 @@ Three production-grade projects spanning batch processing, data warehousing, and
 │               │  [CI/CD Tests]    │    [Cloud DW]           │
 │               │                   │                         │
 ├───────────────┴───────────────────┴─────────────────────────┤
-│  Orchestration ──→ Transformation ──→ Storage ──→ Alerts    │
+│    Orchestration → Transformation → Storage → Alerts        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
