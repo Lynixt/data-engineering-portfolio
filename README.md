@@ -10,6 +10,33 @@ Three production-grade projects spanning batch processing, data warehousing, and
 | 2   | [Superstore Warehouse](https://github.com/Lynixt/superstore-warehouse) | Dimensional data warehouse with CI/CD and data quality tests | dbt, PostgreSQL, GitHub Actions, star schema      |
 | 3   | [Wiki Stream](https://github.com/Lynixt/wiki-stream)                   | Real-time Wikipedia stream processed through Kafka to cloud  | Kafka, Databricks, Python, Docker                 |
 
+## Architecture at a Glance
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      DATA ENGINEERING                        │
+├───────────────┬───────────────────┬─────────────────────────┤
+│               │                   │                         │
+│  Project 1    │    Project 2      │      Project 3          │
+│  Batch        │    Warehousing    │      Streaming          │
+│               │                   │                         │
+│  [API]        │  [CSV]            │    [Wikipedia SSE]      │
+│    │          │    │              │        │                │
+│    ▼          │    ▼              │        ▼                │
+│  [Airflow]──► │  [dbt seed]──►    │    [Kafka Producer]     │
+│    │          │    │              │        │                │
+│    ▼          │    ▼              │        ▼                │
+│  [PostgreSQL] │  [dbt models]──►  │    [Kafka Topic]        │
+│    │          │    │              │        │                │
+│    ▼          │    ▼              │        ▼                │
+│  [Telegram]   │  [Star Schema]    │    [Databricks]         │
+│               │  [CI/CD Tests]    │    [Cloud DW]           │
+│               │                   │                         │
+├───────────────┴───────────────────┴─────────────────────────┤
+│  Orchestration ──→ Transformation ──→ Storage ──→ Alerts    │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ## Skills Demonstrated
 
 | Category           | Tools & Concepts                                               |
