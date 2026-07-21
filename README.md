@@ -68,4 +68,3 @@ The factory is open.
 ## Contact
 
 - GitHub: [Lynixt](https://github.com/Lynixt)
-- Location: Indonesia | Open to relocation to Berlin, Amsterdam, or remote EU
